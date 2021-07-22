@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 164" width="300" height="164">
+  <style>
+  text { font-family: Arial, sans-serif; text-anchor: middle; }
+  .t1 { font-size: 13px; }
+  .t2 { font-size: 11px; }
+  </style>
+  <defs>
+    <path id="person" transform="scale(2) translate(-10,-10)" d="M19.61,17.91c-0.57-1.32-3.35-2.19-5.19-3.01c-1.85-0.82-1.59-1.31-1.66-1.99
+      c-0.01-0.09-0.01-0.19-0.02-0.29c0.63-0.56,1.15-1.33,1.49-2.22c0,0,0.02-0.05,0.02-0.06c0.07-0.19,0.13-0.39,0.19-0.6
+      c0.42-0.09,0.67-0.55,0.76-0.98c0.1-0.17,0.29-0.6,0.25-1.08c-0.06-0.62-0.31-0.91-0.59-1.03c0-0.04,0-0.07,0-0.11
+      c0-0.79-0.07-1.93-0.22-2.68c-0.03-0.21-0.08-0.42-0.14-0.62c-0.27-0.92-0.84-1.74-1.6-2.32C12.11,0.32,11,0,10.01,0
+      s-2.1,0.32-2.89,0.92C6.36,1.5,5.79,2.32,5.52,3.24c-0.06,0.2-0.11,0.41-0.14,0.62C5.24,4.61,5.16,5.75,5.16,6.54
+      c0,0.03,0,0.06,0,0.1c-0.29,0.11-0.55,0.4-0.61,1.04C4.51,8.16,4.7,8.59,4.8,8.76C4.9,9.2,5.15,9.67,5.59,9.74
+      c0.05,0.21,0.12,0.41,0.19,0.6c0,0.01,0.01,0.03,0.01,0.04L5.8,10.4c0.34,0.91,0.87,1.69,1.52,2.25c0,0.09-0.01,0.18-0.02,0.26
+      c-0.07,0.68,0.13,1.17-1.72,1.99s-4.62,1.69-5.19,3.01C-0.18,19.23,0.05,20,0.05,20h19.9C19.95,20,20.18,19.23,19.61,17.91z" />
+    <marker id="incompatible-arrow" markerWidth="10" markerHeight="9" refX="8" refY="4.5" orient="auto" fill="#000">
+      <polygon points="0,0,10,4.5,0,9" />
+    </marker>
+    <marker id="compatible-arrow" markerWidth="10" markerHeight="9" refX="8" refY="4.5" orient="auto" fill="#0d8050">
+      <polygon points="0,0,10,4.5,0,9" />
+    </marker>
+  </defs>
+
+  <g transform="translate(0,-18)">
+    <use href="#person" x="50" y="40" />
+    <use href="#person" x="250" y="40" />
+    <use href="#person" x="50" y="140" />
+    <use href="#person" x="250" y="140" />
+
+    <text x="50" y="80" class="t1">Donor 1</text>
+    <text x="250" y="80" class="t1">Recipient 1</text>
+    <text x="50" y="180" class="t1">Donor 2</text>
+    <text x="250" y="180" class="t1">Recipient 2</text>
+
+    <text x="150" y="46" class="t2">Not compatible</text>
+    <text x="150" y="146" class="t2">Not compatible</text>
+
+    <line x1="0" y1="100" x2="300" y2="102" stroke="#ccc" />
+
+    <line x1="95" y1="50" x2="205" y2="50" stroke="#000"
+      marker-end="url(#incompatible-arrow)" stroke-dasharray="4 2" />
+    <line x1="95" y1="150" x2="205" y2="150" stroke="#000"
+      marker-end="url(#incompatible-arrow)" stroke-dasharray="4 2" />
+
+    <line x1="95" y1="70" x2="205" y2="130" stroke="#198754"
+      marker-end="url(#compatible-arrow)" />
+    <line x1="95" y1="130" x2="205" y2="70" stroke="#198754"
+      marker-end="url(#compatible-arrow)" />
+  </g>
+</svg>
